@@ -10,6 +10,7 @@
 		D766252A2945A48300C02428 /* ChineseChessDivination.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76625212945A48300C02428 /* ChineseChessDivination.framework */; };
 		D766252F2945A48300C02428 /* ChineseChessDivinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766252E2945A48300C02428 /* ChineseChessDivinationTests.swift */; };
 		D76625302945A48300C02428 /* ChineseChessDivination.h in Headers */ = {isa = PBXBuildFile; fileRef = D76625242945A48300C02428 /* ChineseChessDivination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D766253A2945A4CE00C02428 /* ChineseChess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76625392945A4CE00C02428 /* ChineseChess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		D76625242945A48300C02428 /* ChineseChessDivination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChineseChessDivination.h; sourceTree = "<group>"; };
 		D76625292945A48300C02428 /* ChineseChessDivinationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseChessDivinationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D766252E2945A48300C02428 /* ChineseChessDivinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChessDivinationTests.swift; sourceTree = "<group>"; };
+		D76625392945A4CE00C02428 /* ChineseChess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D76625242945A48300C02428 /* ChineseChessDivination.h */,
+				D76625392945A4CE00C02428 /* ChineseChess.swift */,
 			);
 			path = ChineseChessDivination;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					D76625202945A48300C02428 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 					D76625282945A48300C02428 = {
 						CreatedOnToolsVersion = 14.0;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D766253A2945A4CE00C02428 /* ChineseChess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +336,7 @@
 		D76625342945A48300C02428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		D76625352945A48300C02428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -401,6 +409,7 @@
 		D76625372945A48300C02428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34Q7A274UP;
@@ -421,6 +430,7 @@
 		D76625382945A48300C02428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34Q7A274UP;
