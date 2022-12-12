@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D766252A2945A48300C02428 /* ChineseChessDivination.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76625212945A48300C02428 /* ChineseChessDivination.framework */; };
-		D766252F2945A48300C02428 /* ChineseChessDivinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766252E2945A48300C02428 /* ChineseChessDivinationTests.swift */; };
 		D76625302945A48300C02428 /* ChineseChessDivination.h in Headers */ = {isa = PBXBuildFile; fileRef = D76625242945A48300C02428 /* ChineseChessDivination.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D766253A2945A4CE00C02428 /* ChineseChess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76625392945A4CE00C02428 /* ChineseChess.swift */; };
 		D766253C2946E8C400C02428 /* ChineseChessLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766253B2946E8C400C02428 /* ChineseChessLoader.swift */; };
+		D766253F2946EB6C00C02428 /* ChineseChessLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D766253E2946EB6C00C02428 /* ChineseChessLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,9 @@
 		D76625212945A48300C02428 /* ChineseChessDivination.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChineseChessDivination.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76625242945A48300C02428 /* ChineseChessDivination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChineseChessDivination.h; sourceTree = "<group>"; };
 		D76625292945A48300C02428 /* ChineseChessDivinationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseChessDivinationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D766252E2945A48300C02428 /* ChineseChessDivinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChessDivinationTests.swift; sourceTree = "<group>"; };
 		D76625392945A4CE00C02428 /* ChineseChess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChess.swift; sourceTree = "<group>"; };
 		D766253B2946E8C400C02428 /* ChineseChessLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChessLoader.swift; sourceTree = "<group>"; };
+		D766253E2946EB6C00C02428 /* ChineseChessLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseChessLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		D766252D2945A48300C02428 /* ChineseChessDivinationTests */ = {
 			isa = PBXGroup;
 			children = (
-				D766252E2945A48300C02428 /* ChineseChessDivinationTests.swift */,
+				D766253E2946EB6C00C02428 /* ChineseChessLoaderTests.swift */,
 			);
 			path = ChineseChessDivinationTests;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D766252F2945A48300C02428 /* ChineseChessDivinationTests.swift in Sources */,
+				D766253F2946EB6C00C02428 /* ChineseChessLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
