@@ -8,10 +8,10 @@
 import Foundation
 // 帥 仕 相 俥 傌 炮 兵
 // 將 士 象 車 馬 包 卒
-struct ChineseChessType{
+public struct ChineseChessType{
     let chineseChess: ChineseChess
     let isVisible: Bool
-    init(chineseChess: ChineseChess, isVisible: Bool = false) {
+    public init(chineseChess: ChineseChess, isVisible: Bool = false) {
         self.chineseChess = chineseChess
         self.isVisible = isVisible
     }
@@ -56,7 +56,7 @@ extension ChineseChessType{
     }
 }
 
-enum ChineseChess{
+public enum ChineseChess{
     /// 象
     case blackBishop
     /// 包

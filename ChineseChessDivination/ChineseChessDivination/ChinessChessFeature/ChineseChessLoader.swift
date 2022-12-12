@@ -7,8 +7,8 @@
 
 import Foundation
 
-typealias LoadChineseChessResult = Result<[ChineseChessType],Error>
+public typealias LoadChineseChessResult = Result<[ChineseChessType],Error>
 
-protocol ChineseChessLoader{
+public protocol ChineseChessLoader{
     func load(count: Int,completion: @escaping((LoadChineseChessResult) -> Void))
 }

@@ -8,16 +8,26 @@
 import XCTest
 import ChineseChessDivination
 
-class ChineseChessDivinationLoader{
-    var loadCount: Int?
-    func load(loadCount: Int){
-        self.loadCount = loadCount
+class ChineseChessDivinationLoader: ChineseChessLoader{
+    func load(count: Int, completion: @escaping ((ChineseChessDivination.LoadChineseChessResult) -> Void)) {
+        let array = Array(repeating: ChineseChessType(chineseChess: .redKing), count: count)
+        completion(.success(array))
     }
 }
 
 class ChineseChessLoaderTests: XCTestCase{
-    func test_init(){
+    func test_loaderCount(){
         let sut = ChineseChessDivinationLoader()
-        XCTAssertNil(sut.loadCount)
+        let testLoadCount = 5
+        var loadedCount = 0
+        sut.load(count: testLoadCount) { result in
+            switch result{
+            case .success(let array):
+                loadedCount = array.count
+                XCTAssertEqual(loadedCount, testLoadCount)
+            case .failure(let error):
+                XCTFail(error.localizedDescription)
+            }
+        }
     }
 }
