@@ -10,7 +10,7 @@ import ChineseChessDivination
 
 class ChineseChessDivinationLoader: ChineseChessLoader{
     func load(count: Int, completion: @escaping ((ChineseChessDivination.LoadChineseChessResult) -> Void)) {
-        let array = Array(repeating: ChineseChessType(chineseChess: .redKing), count: count)
+        let array = Array(ChineseChessType.prototype.shuffled()[..<count])
         completion(.success(array))
     }
 }
@@ -25,6 +25,19 @@ class ChineseChessLoaderTests: XCTestCase{
             case .success(let array):
                 loadedCount = array.count
                 XCTAssertEqual(loadedCount, testLoadCount)
+            case .failure(let error):
+                XCTFail(error.localizedDescription)
+            }
+        }
+    }
+    func test_loaderRandom(){
+        let sut = ChineseChessDivinationLoader()
+        let total = 5
+        let primary = Array(ChineseChessType.prototype[0..<total])
+        sut.load(count: total) { result in
+            switch result{
+            case .success(let array):
+                XCTAssertNotEqual(array, primary)
             case .failure(let error):
                 XCTFail(error.localizedDescription)
             }

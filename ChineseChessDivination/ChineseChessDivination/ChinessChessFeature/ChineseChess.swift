@@ -8,7 +8,7 @@
 import Foundation
 // 帥 仕 相 俥 傌 炮 兵
 // 將 士 象 車 馬 包 卒
-public struct ChineseChessType{
+public struct ChineseChessType: Equatable{
     let chineseChess: ChineseChess
     let isVisible: Bool
     public init(chineseChess: ChineseChess, isVisible: Bool = false) {
@@ -18,7 +18,7 @@ public struct ChineseChessType{
 }
 
 extension ChineseChessType{
-    static var prototype: [ChineseChessType]{
+    public static var prototype: [ChineseChessType]{
         [
             .init(chineseChess: .redKing),
             .init(chineseChess: .redMandarin),
