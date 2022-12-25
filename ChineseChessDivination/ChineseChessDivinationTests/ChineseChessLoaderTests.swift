@@ -6,14 +6,7 @@
 //
 
 import XCTest
-import ChineseChessDivination
-
-class ChineseChessDivinationLoader: ChineseChessLoader{
-    func load(count: Int, completion: @escaping ((ChineseChessDivination.LoadChineseChessResult) -> Void)) {
-        let array = Array(ChineseChessType.prototype.shuffled()[..<count])
-        completion(.success(array))
-    }
-}
+@testable import ChineseChessDivination
 
 class ChineseChessLoaderTests: XCTestCase{
     func test_loaderCount(){

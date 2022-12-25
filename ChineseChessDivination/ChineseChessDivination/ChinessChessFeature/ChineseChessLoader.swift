@@ -12,3 +12,10 @@ public typealias LoadChineseChessResult = Result<[ChineseChessType],Error>
 public protocol ChineseChessLoader{
     func load(count: Int,completion: @escaping((LoadChineseChessResult) -> Void))
 }
+
+class ChineseChessDivinationLoader: ChineseChessLoader{
+    func load(count: Int, completion: @escaping ((ChineseChessDivination.LoadChineseChessResult) -> Void)) {
+        let array = Array(ChineseChessType.prototype.shuffled()[..<count])
+        completion(.success(array))
+    }
+}
